@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+background-color: #000000;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.item{
+    height: 65vh;
+    position: relative;
+   overflow: hidden;
+
+}
+
+.carrosel{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    margin: center;
+    margin-left: 300px;
+    margin-top: 50px;
+    
+}
+
+.image {
+    
+    max-width: 100%;
+    height: 400px;
+    position: absolute;
+    margin: center;
+    
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+   
+}
+
+.arrows button:nth-child(1) {
+    & img {
+        transform: scale(-1);
+    }
+}
+
+.arrows button {
+    top: 60%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.arrows button:hover{
+    opacity: 0.8;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  #0c0c0c;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 80px;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: transparent;
+    height: 50px;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a {
+    
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+footer {
+    background-color:#0c0c0c;
+    color: #ddd;
+    text-align: center;
+    padding: 20px ;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer img {
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 0;
+    }
+   
+.carrosel{
+    transform: translateX(100vw);
+    transition: 0.9s;
+    opacity: 0;
+}
+
+.active{
+    transform: translateX(0);
+    transition: 0.9s;
+    opacity: 1;
+}
+
+.about-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.about-text {
+    max-width: 500px;
+    float: right;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}

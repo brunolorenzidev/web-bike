@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+      background-color: #000000fa;
+      color: #000000;
+      line-height: 1.6;
+  }
+  
+  .item{
+      height: 65vh;
+      position: relative;
+     overflow: hidden;
+  
+  }
+  
+  #container {
+      width: 1000px; 
+      height: auto;
+      margin-left: auto;
+      margin-right: auto; 
+      border: solid 1px;
+  }
+  .header-container {
+      text-align: center;
+      margin-bottom: 30px;
+  
+  }
+  
+  .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .logo-container img {
+      max-width: 80px;
+      height: auto;
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  nav {
+      background-color: transparent;
+      height: 50px;
+      padding: 15px 0;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  nav a {
+     
+      margin-left: 30px;
+      text-decoration: none;
+  }
+  
+  .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .box_info {
+      flex: 1 1 calc(33.33% - 20px);
+      background-color: #000000;
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid  #000000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: calc(33.33% - 20px);
+  }
+  
+  .box_info:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px  #fffffe93;
+  }
+  
+  .box_info img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #fffcf0;
+  }
+  
+  .box_info p {
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      color: #ffffff;
+  }
+  
+  footer {
+    background-color:#0c0c0c;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    clear: both;
+}
+
+footer img {
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 0;
+    }

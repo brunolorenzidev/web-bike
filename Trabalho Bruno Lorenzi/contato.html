@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletaria</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo1.png" alt="BIKE">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu"></ul>
+        <a style="color: white;" href="./index.html">Home</a>
+        <a style="color: white;" href="./compras.html">Compras</a>
+        <a style="color: white;" href="./contato.html">Contato</a>
+        <a style="color: white;" href="./quemsomos.html">Quem somos</a>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            
+            <div class="form-container">
+                <h2>Entre em contato 📞</h2>
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Nome *</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Mensagem *</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="table-container">
+                <h2>Anuncie sua Bicicleta 📍</h2> 
+                <table id="dynamicTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Modelo da Bicicleta</th>
+                            <th>Preço</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+                <button id="addRowButton">Registrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bike Engenheiros</p>
+        <div class="social-icons">
+            <img src="img/insta.png" alt="Instagram">
+            <img src="img/linkedin.png" alt="LinkedIn">
+            <img src="img/face.png" alt="Facebook">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tabela.js"></script>
+</body>
+
+</html>
